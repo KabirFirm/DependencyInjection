@@ -1,6 +1,7 @@
 import 'package:dependency_injection/app_info.dart';
 import 'package:dependency_injection/inherited_injection.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class HomeView extends StatelessWidget {
   // HomeView has dependency on the AppInfo
@@ -51,9 +52,9 @@ class Step4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var appInfo = InheritedInjection.of(context)?.appInfo;
+    var appInfo = Provider.of<AppInfo>(context);
     return Center(
-      child: Text(appInfo!.welcomeMessage),
+      child: Text(appInfo.welcomeMessage),
     );
   }
 }
