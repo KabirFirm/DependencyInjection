@@ -9,7 +9,7 @@ import 'home_view.dart';
 void main() {
   runApp( MyApp());
 
-  // singleton check
+  /*// singleton check
   //Singleton.instance.someMethod();
   Singleton instance = Singleton.instance;
   instance.someMethod();
@@ -23,7 +23,7 @@ void main() {
   SingletonEager instanceEager1 = SingletonEager.instance;
   SingletonEager instanceEager2 = SingletonEager.instance;
   instanceEager1.someMethod();
-  instanceEager2.someMethod();
+  instanceEager2.someMethod();*/
 }
 
 class MyApp extends StatelessWidget {
